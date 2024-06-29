@@ -1,37 +1,5 @@
-# #oeye detection
+#eye detection
 
-# import cv2
-# import numpy as np
-# import dlib
-# from scipy.spatial import distance
-# import imutils 
-# from imutils import face_utils 
-
-# def eye_aspect_ratio(eye):
-#     A = distance.euclidean(eye[1],eye[2])    #p2 to p1
-#     B = distance.euclidean(eye[3],eye[4])    #p3 to p5
-#     C = distance.euclidean(eye[0],eye[5])    #p1 to p4
-#     ear = (A+B)/(2.0*C)
-#     return ear 
-
-# thresh=0.25     #value for checking closing eye
-# frame_check = 20
-# detect = dlib.get_frontal_face_detection()
-# predict = dlib.shape_predictor('C:\Users\User\Desktop\program\shape_predictor_68_face_landmarks.dat')
-
-
-# (lstart,lend) =  face_utils.FACIAL_LANDMARKS_68_IDXS['left_eye']                               #starting and ending points  LEFTEYE INDEX STORING
-# (rstart,rend) =  face_utils.FACIAL_LANDMARKS_68_IDXS['right_eye']                              #RIGHTEYE INDEX STORING
-
-
-# cap = cv2.VideoCapture(0)
-# flag = 0
-
-# while True:
-#     ret,frame = cap.read()                                        #ret=true/false
-#     frame = imutils.resize(frame,width=450)                       #to resize the frame
-#     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) 
-    
 from scipy.spatial import distance
 from imutils import face_utils
 import imutils
